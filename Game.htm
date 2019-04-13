@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///Users/keke/Desktop/Java/Game.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        canvas {
+            border: solid 1px #f1f1f1;
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+
+<body onload="startGame();"><canvas width="480" height="270"></canvas>
+    <script>
+        var myGamePiece;
+        function startGame() {
+            myGameArea.start();
+            myGamePiece = new componet(30, 30, "red", 10, 120)
+        };
+
+        var myGameArea = {
+            canvas: document.createElement('canvas'),
+            start: function () {
+                this.canvas.width = 480;
+                this.canvas.height = 270;
+                this.context = this.canvas.getContext("2d");
+
+                //this.interval = new interval(updateGameArea, 5000);
+
+                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+            }
+        };
+
+        function componet(width, height, color, x, y) {
+            this.width = width;
+            this.height = height;
+            this.x = x;
+            this.y = y;
+            ctx = myGameArea.context;
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+
+        function updateGameArea() {
+            alert("I am invoked");
+        }
+    </script>
+
+
+    <h1>Game</h1>
+
+
+</body></html>

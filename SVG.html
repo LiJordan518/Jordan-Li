@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>SVG</h2>
+    <div>
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="50" stroke=#fa7162 stroke-width="2px" fill="blue" />
+        </svg>
+        <svg width="200" height="200">
+            <rect width="100" height="50" style="fill:blueviolet; stroke-width:3;stroke: orange" />
+        </svg>
+    </div>
+
+    <h2>Canvas</h2>
+
+    <canvas id="myCanvas" width="700" height="500" style="border: solid 1px red">
+
+    </canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(0, 0, 150, 75);
+    </script>
+
+
+</body>
+
+</html>

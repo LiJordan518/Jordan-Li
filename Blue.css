@@ -1,0 +1,20 @@
+Header{
+    background-color: #00a3ff;
+    font-size: 50px ;
+    color:#9b5329;
+    text-align: center;
+    padding:10px;
+    margin: 0px;
+}
+button{
+    font-size:20px;
+    background-color:aquamarine;
+    text-align: center;
+    padding: 5px;
+    border:dotted;
+    color:#03a3ff;
+} 
+
+.bi{
+    background-image:"img/bi.jpeg";
+}
